@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fernando Cejas - Tech Blog</title>
+  <!-- 添加Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- 添加Bootstrap图标 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <!-- 添加代码高亮 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+  <!-- 自定义样式 -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="row g-0">
+      <!-- 侧边栏 -->
+      <div class="col-md-3 col-lg-2 sidebar bg-dark text-white py-5 d-none d-md-block">
+        <div class="text-center mb-4">
+          <img src="https://via.placeholder.com/150" class="rounded-circle profile-img mb-3" alt="Fernando Cejas">
+          <h2>Fernando Cejas</h2>
+          <p class="text-muted">Nerdy Tech (he/him)</p>
+        </div>
+        <div class="d-grid gap-2 px-4">
+          <a href="#" class="btn btn-outline-light mb-2">HIRE ME!!!</a>
+        </div>
+        <nav class="mt-4">
+          <ul class="nav flex-column px-4">
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="/">Blog</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="/">Projects</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="/">Tech Talks</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="/">Podcasts</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="/">Postmortems</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="/">Linux Docs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a class="nav-link text-white" href="/">About Me</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="social-icons mt-4 text-center">
+          <a href="#" class="text-white mx-2"><i class="bi bi-github"></i></a>
+          <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="text-white mx-2"><i class="bi bi-youtube"></i></a>
+          <a href="#" class="text-white mx-2"><i class="bi bi-rss"></i></a>
+        </div>
+      </div>
+      
+      <!-- 主内容区 -->
+      <div class="col-md-9 col-lg-10 ms-auto">
+        <div class="d-md-none">
+          <%- include('partials/header') %>
+        </div>
+        
+        <main class="container py-4">
+          <%- body %>
+        </main>
+        
+        <%- include('partials/footer') %>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 返回顶部按钮 -->
+  <button id="back-to-top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4" style="display: none; z-index: 1000;" title="返回顶部">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+  
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- 代码高亮 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <!-- 自定义脚本 -->
+  <script src="/js/main.js"></script>
+</body>
+</html>

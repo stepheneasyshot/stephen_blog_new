@@ -1,0 +1,29 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/" class="text-muted">Home</a></li>
+    <li class="breadcrumb-item active text-white" aria-current="page"><%= title %></li>
+  </ol>
+</nav>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card bg-dark border-0">
+      <% if (coverImage) { %>
+      <div class="post-cover-container mb-4">
+        <img src="<%= coverImage %>" class="post-cover-img" alt="<%= title %>">
+      </div>
+      <% } %>
+      <div class="card-body px-0">
+        <h1 class="card-title mb-3 text-white"><%= title %></h1>
+        <div class="text-muted mb-4">Published: <%= date %></div>
+        <div class="markdown-content text-white">
+          <%- content %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="mt-4">
+  <a href="/" class="btn btn-outline-light">Back to Home</a>
+</div>
