@@ -1,38 +1,12 @@
-<div class="featured-section bg-dark text-white p-4 mb-5">
-  <h2 class="mb-4 border-bottom pb-3">Featured Posts</h2>
-  <div class="row">
-    <div class="col-md-6 mb-4">
-      <div class="card bg-dark border-0 h-100">
-        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Featured post">
-        <div class="card-body px-0">
-          <h3 class="card-title">Rust cross-platform... The Android part</h3>
-          <p class="card-text text-muted">In this journey, we will go through the process, infrastructure and architecture on how we can integrate Rust in our Android Project in a cross-platform development way.</p>
-          <a href="#" class="btn btn-outline-light">Read more</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6 mb-4">
-      <div class="card bg-dark border-0 h-100">
-        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Featured post">
-        <div class="card-body px-0">
-          <h3 class="card-title">An over-engineered Home Lab with Docker and Kubernetes</h3>
-          <p class="card-text text-muted">Setting up a personal Home Lab is not a task for lazy people. It incurs a big cost of maintenance and issues can arise even though we might use the best IT-Infrastructure practices.</p>
-          <a href="#" class="btn btn-outline-light">Read more</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <div class="row">
   <div class="col-md-12">
-    <h2 class="mb-4 border-bottom pb-3">Latest Posts</h2>
+    <h2 class="mb-4 border-bottom pb-3">首页</h2>
     
     <% if (posts && posts.length > 0) { %>
       <div class="row">
         <% posts.forEach(post => { %>
           <div class="col-md-6 mb-4">
-            <div class="card bg-dark border-0 h-100">
+            <div class="card bg-dark border-0 h-100 p-2">
               <% if (post.coverImage) { %>
               <div class="card-img-container">
                 <img src="<%= post.coverImage %>" class="card-img-top post-cover" alt="<%= post.title %>的封面图片">
@@ -44,9 +18,9 @@
               <% } %>
               <div class="card-body px-0">
                 <h3 class="card-title"><%= post.title %></h3>
-                <div class="text-muted small mb-2">Published: <%= post.date %></div>
-                <p class="card-text text-muted"><%= post.excerpt %></p>
-                <a href="/post/<%= post.id %>" class="btn btn-outline-light">Read more</a>
+                <div class="text-white-50 small mb-2">Published: <%= post.date %></div>
+                <p class="card-text text-white-50"><%= post.excerpt %></p>
+                <a href="/post/<%= post.id %>" class="btn btn-outline-light">阅读全文</a>
               </div>
             </div>
           </div>

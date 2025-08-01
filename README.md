@@ -2,3 +2,6 @@
 
 ## 第一版
 ![](./screenshots/my_blog_history_0.jpg)
+
+## 第二版
+![](./screenshots/my_blog_history_1.jpg)

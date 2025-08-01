@@ -69,6 +69,7 @@ header {
 }
 
 .breadcrumb-item a {
+  color: #dee2e6;
   text-decoration: none;
 }
 
@@ -223,12 +224,12 @@ h2 {
 
 /* 文章详情页封面图片样式 */
 .post-cover-container {
-  height: 400px;
+  height: 480px;
+  width: 860px;
   overflow: hidden;
   margin-bottom: 2rem;
   border-radius: 8px;
   padding: 15px;
-  background-color: #1a1a1a;
 }
 
 .post-cover-img {
@@ -244,16 +245,52 @@ h2 {
   line-height: 1.8;
 }
 
-.markdown-content h1,
-.markdown-content h2,
-.markdown-content h3,
-.markdown-content h4,
-.markdown-content h5,
-.markdown-content h6 {
-  color: #ffffff;
+.markdown-content h1 {
+  color: #ffffff;          /* 最醒目白色 */
+  font-size: 2.5rem;       /* 最大字号 */
+  margin-top: 2.5rem;      /* 最大上边距 */
+  margin-bottom: 1.5rem;
+  font-weight: 700;        /* 加粗 */
+}
+
+.markdown-content h2 {
+  color: #f5f5f5;          /* 次白色 */
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+}
+
+.markdown-content h3 {
+  color: #eeeeee;          /* 浅灰色 */
+  font-size: 1.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.markdown-content h4 {
+  color: #e0e0e0;
+  font-size: 1.5rem;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 600;
+}
+
+.markdown-content h5 {
+  color: #d0d0d0;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.markdown-content h6 {
+  color: #c0c0c0;          /* 最深灰色 */
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .markdown-content p {
@@ -271,10 +308,9 @@ h2 {
 
 .markdown-content code {
   background-color: #2d2d2d;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem;
   border-radius: 3px;
   font-family: 'Consolas', 'Monaco', monospace;
-  color: #e0e0e0;
 }
 
 .markdown-content pre {
@@ -288,7 +324,7 @@ h2 {
 
 .markdown-content pre code {
   background-color: transparent;
-  color: #e0e0e0;
+  color: #282c34;
   padding: 0;
   border-radius: 0;
   font-size: 0.95rem;
@@ -372,80 +408,6 @@ h2 {
   border-radius: 5px;
   margin: 1rem 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Markdown内容样式 */
-.markdown-content {
-  line-height: 1.8;
-}
-
-.markdown-content h1,
-.markdown-content h2,
-.markdown-content h3,
-.markdown-content h4,
-.markdown-content h5,
-.markdown-content h6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  color: #212529;
-}
-
-.markdown-content h1 {
-  font-size: 2.25rem;
-  border-bottom: 1px solid #eaecef;
-  padding-bottom: 0.3rem;
-}
-
-.markdown-content h2 {
-  font-size: 1.8rem;
-  border-bottom: 1px solid #eaecef;
-  padding-bottom: 0.3rem;
-}
-
-.markdown-content h3 {
-  font-size: 1.5rem;
-}
-
-.markdown-content p {
-  margin-bottom: 1.25rem;
-}
-
-.markdown-content blockquote {
-  padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
-  border-left: 4px solid #6c757d;
-  background-color: #f8f9fa;
-}
-
-.markdown-content pre {
-  background-color: #f6f8fa;
-  border-radius: 6px;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  overflow: auto;
-}
-
-.markdown-content code {
-  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-  font-size: 0.9em;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  background-color: #f6f8fa;
-}
-
-.markdown-content pre code {
-  padding: 0;
-  background-color: transparent;
-}
-
-.markdown-content img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1.5rem auto;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .markdown-content a {
